@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+ 
+<script src="itemfunctions.js"></script>
+</head>
+<body>
+	<div data-role="page" id="registerpage" >
+		<div data-role="header" data-theme="b">
+			<h1>registration Page</h1>
+		</div>
+		<!-- /header -->
+		<div data-role="content" data-theme="b">
+
+			<form >
+				<div class="ui-field-contain" >
+					<label for="regemail">Email:</label> <input class="required"
+						type="text" name="regemail" id="regemail"
+						placeholder="username@server.com">
+					 <label for="regpassword">Password:</label>
+					<input class="required" type="password" name="regpassword"
+						id="regpassword" placeholder="password">
+						
+						 <label for="regname">name:</label>
+					<input class="required" type="text" name="regname"
+						id="regname" placeholder="name">
+				</div>
+				<input type="submit"  value="register" onclick='register($("#regname").val(),$("#regpassword").val(),$("#regemail").val())'>
+			</form>
+		
+		<!-- /content -->
+		</div>
+		<div data-role="footer">
+			<h4>registration page</h4>
+		</div>
+		<!-- /footer -->
+	
+	</div>
+
+
+</body>
+</html>
+
+
+			
+	
+
+
+       
+ 

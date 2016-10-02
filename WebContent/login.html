@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+ 
+<script src="itemfunctions.js"></script>
+</head>
+<body>
+	<div data-role="page" id="loginpage" >
+		<div data-role="header" data-theme="b">
+			<h1>Login Page</h1>
+		</div>
+		<!-- /header -->
+		<div data-role="content" data-theme="b">
+
+			<form >
+				<div class="ui-field-contain" >
+					<label for="email">Email:</label> <input class="required"
+						type="text" name="email" id="email"
+						placeholder="username@server.com"> <label for="password">Password:</label>
+					<input class="required" type="password" name="password"
+						id="password" placeholder="password">
+				</div>
+			<input type="submit"  value="login" onclick='login($("#email").val(),$("#password").val())'>
+			</form>
+		
+		<!-- /content -->
+		</div>
+		<div data-role="footer">
+			<h4>Login page</h4>
+		</div>
+		<!-- /footer -->
+	
+	</div>
+
+
+</body>
+</html>
+

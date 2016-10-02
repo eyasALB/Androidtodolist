@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js">
+    </script>
+
+    <script src="itemfunctions.js"></script>
+
+</head>
+<body>
+<script>
+
+</script>
+<div data-role="page" id="todolist">
+    <div data-role="header" data-position="fixed">
+        <h1>List Of Tasks</h1>
+    </div>
+   <a href="home.html">  <button type="button" data-icon="home" data-theme="b" data-iconpos="right" data-mini="true" data-inline="true" onclick="logout()">logout</button></a>
+  
+    <div data-role="main" class="ui-content">
+    <button type="button" data-icon="plus" data-theme="b" data-iconpos="right" data-mini="true" data-inline="true" onclick="getItems()">get items</button>
+           
+        <a href="additem.html" id="additem" data-role="button" class="ui" data-transition="pop" data-theme="b" data-icon="gear" data-mini="true"
+           data-rel="dialog" data-inline="true">add item</a>
+
+            <button type="button" data-icon="plus" data-theme="b" data-iconpos="right" data-mini="true" data-inline="true" id="expand">Expand last</button>
+            <button type="button" data-icon="minus" data-theme="b" data-iconpos="right" data-mini="true" data-inline="true" id="collapse">Collapse last</button>
+            <div data-role="collapsible-set" data-content-theme="d" id="set">
+
+
+    </div>
+
+    <div data-role="footer">
+        <h1>List Of Tasks</h1>
+    </div>
+    <p id="demo"></p>
+</div>
+</div>
+
+</body>
+</html>
